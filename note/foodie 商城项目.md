@@ -9,3 +9,7 @@
 子模块可以使用顶级工程所有的资源（依赖）子模块之间如果要使用资源，必须构建依赖关系。
 
 一个顶级工程是可以由多个不同的子工程共同组合而成。
+
+构建完项目后使用maven中的install将项目进行集合
+
+<img src="https://img-blog.csdnimg.cn/direct/d6c194df00474f268bc00d9eed3feca7.png" alt="maven项目构建聚合" style="zoom:33%;" />

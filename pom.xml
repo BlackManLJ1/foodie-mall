@@ -9,6 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>foodie-mall-common</module>
+        <module>foodie-mall-pojo</module>
+        <module>foodie-mall-mapper</module>
+        <module>foodie-mall-service</module>
+        <module>foodie-mall-api</module>
     </modules>
 
     <!--主工程打包方式为pom
