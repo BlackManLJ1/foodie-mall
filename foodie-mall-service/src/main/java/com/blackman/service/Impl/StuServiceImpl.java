@@ -19,16 +19,19 @@ public class StuServiceImpl implements StuService {
 
     @Override
     public String saveStu(Stu stu) {
-        return stuMapper.insert(stu) + "";
+        int resultForInsert = stuMapper.insert(stu);
+        return resultForInsert == 1? "保存成功": "保存失败";
     }
 
     @Override
     public String updateStu(Stu stu) {
-        return stuMapper.updateByPrimaryKey(stu) + "";
+        int resultForUpdate = stuMapper.updateByPrimaryKey(stu);
+        return resultForUpdate == 1? "更新成功": "更新失败";
     }
 
     @Override
     public String deleteStu(Integer id) {
-        return stuMapper.deleteByPrimaryKey(id) + "";
+        int resultForDel = stuMapper.deleteByPrimaryKey(id);
+        return resultForDel == 1 ? "删除成功": "删除失败";
     }
 }
